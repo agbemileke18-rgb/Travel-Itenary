@@ -1,0 +1,59 @@
+@import './tokens.css';
+
+.search-bar {
+  display: flex;
+  min-height: 54px;
+  align-items: center;
+  gap: 12px;
+  padding: 0 17px;
+  border: 1px solid var(--color-border);
+  border-radius: 14px;
+  background: white;
+  box-shadow: 0 4px 14px rgb(34 61 51 / 4%);
+  transition: border-color 150ms ease, box-shadow 150ms ease;
+}
+
+.search-bar:focus-within {
+  border-color: #7da99d;
+  box-shadow: 0 0 0 4px rgb(34 107 92 / 10%);
+}
+
+.search-bar__icon {
+  flex: 0 0 auto;
+  color: var(--color-primary);
+}
+
+.search-bar__label {
+  position: absolute;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  clip-path: inset(50%);
+}
+
+.search-bar__input {
+  width: 100%;
+  min-width: 0;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  color: var(--color-ink);
+  font: inherit;
+  font-size: 0.95rem;
+}
+
+.search-bar__input::placeholder {
+  color: #929e99;
+}
+
+.search-bar__input::-webkit-search-cancel-button {
+  cursor: pointer;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .search-bar {
+    transition: none;
+  }
+}

@@ -1,0 +1,13 @@
+:root {
+  color-scheme: light;
+  --color-ink: #1d2b28;
+  --color-muted: #687571;
+  --color-primary: #226b5c;
+  --color-primary-dark: #185447;
+  --color-primary-soft: #e8f3ef;
+  --color-accent: #d7a45b;
+  --color-surface: #ffffff;
+  --color-surface-soft: #f5f7f5;
+  --color-border: #e0e7e3;
+  --shadow-card: 0 12px 32px rgb(34 61 51 / 9%);
+}

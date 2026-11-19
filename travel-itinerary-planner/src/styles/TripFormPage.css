@@ -1,0 +1,87 @@
+@import './tokens.css';
+
+.trip-form-page {
+  width: min(760px, calc(100% - 48px));
+  min-height: 62vh;
+  margin: 0 auto;
+  padding: 30px 0 64px;
+  color: var(--color-ink);
+}
+
+.trip-form-page__back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  margin-bottom: 20px;
+  color: var(--color-primary-dark);
+  font-size: 0.88rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.trip-form-page__back-link:hover {
+  color: var(--color-primary);
+}
+
+.trip-form-page__card {
+  padding: clamp(24px, 5vw, 42px);
+  border: 1px solid var(--color-border);
+  border-radius: 22px;
+  background: white;
+  box-shadow: 0 10px 32px rgb(34 61 51 / 6%);
+}
+
+.trip-form-page__intro {
+  margin-bottom: 28px;
+}
+
+.trip-form-page__icon {
+  display: grid;
+  width: 48px;
+  height: 48px;
+  place-items: center;
+  margin-bottom: 19px;
+  border-radius: 15px;
+  background: var(--color-primary-soft);
+  color: var(--color-primary-dark);
+}
+
+.trip-form-page__intro h1,
+.trip-form-page--not-found h1 {
+  margin: 8px 0;
+  color: var(--color-ink);
+  font-size: clamp(2rem, 5vw, 2.8rem);
+  letter-spacing: -0.06em;
+}
+
+.trip-form-page__intro p,
+.trip-form-page--not-found > p {
+  margin: 0;
+  color: var(--color-muted);
+  font-size: 0.94rem;
+  line-height: 1.65;
+}
+
+.trip-form-page--not-found {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.trip-form-page--not-found .trip-form-page__icon {
+  margin-bottom: 15px;
+}
+
+@media (max-width: 540px) {
+  .trip-form-page {
+    width: calc(100% - 36px);
+    padding-top: 22px;
+  }
+
+  .trip-form-page__card {
+    padding: 23px 18px;
+    border-radius: 17px;
+  }
+}

@@ -1,0 +1,60 @@
+.app-shell {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.app-shell > main {
+  flex: 1 0 auto;
+}
+
+.not-found-page {
+  display: flex;
+  width: min(720px, calc(100% - 40px));
+  min-height: 60vh;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 48px 0;
+  text-align: center;
+}
+
+.not-found-page__code {
+  color: #c9ded5;
+  font-size: clamp(5rem, 18vw, 9rem);
+  font-weight: 750;
+  letter-spacing: -0.09em;
+  line-height: 0.9;
+}
+
+.not-found-page h1 {
+  margin: 22px 0 8px;
+  color: #1d2b28;
+  font-size: clamp(1.8rem, 5vw, 2.7rem);
+  letter-spacing: -0.06em;
+}
+
+.not-found-page p {
+  margin: 0 0 21px;
+  color: #687571;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.not-found-page__link {
+  display: inline-flex;
+  min-height: 45px;
+  align-items: center;
+  padding: 0 17px;
+  border-radius: 12px;
+  background: #226b5c;
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.not-found-page__link:hover {
+  background: #185447;
+}

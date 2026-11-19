@@ -1,0 +1,51 @@
+@import './TripForm.css';
+
+.activity-form {
+  display: grid;
+  gap: 18px;
+}
+
+.activity-form__row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.activity-form__field > label span {
+  color: var(--color-muted);
+  font-size: 0.77rem;
+  font-weight: 500;
+}
+
+.activity-form__field textarea {
+  min-height: 92px;
+  padding: 12px 13px;
+  resize: vertical;
+  line-height: 1.5;
+}
+
+.activity-form__field textarea::placeholder,
+.activity-form__field input::placeholder {
+  color: #9aa59f;
+}
+
+.activity-form__actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  padding-top: 3px;
+}
+
+@media (max-width: 480px) {
+  .activity-form__row {
+    grid-template-columns: 1fr;
+  }
+
+  .activity-form__actions {
+    flex-direction: column-reverse;
+  }
+
+  .activity-form__actions .button {
+    width: 100%;
+  }
+}
