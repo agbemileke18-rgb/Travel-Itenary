@@ -6,9 +6,9 @@ Built as a React Capstone Project demonstrating component reusability, client-si
 
 Live Links
 
-Live Demo: https://travel-itenary-five.vercel.app
+Live Demo: https://gleanword-travel-itinerary.vercel.app/
 
-GitHub Repository: https://github.com/agbemileke18-rgb/Travel-Itenary
+GitHub Repository: https://github.com/agbemileke18-rgb/Travel-Itinerary
 
 Features
 
